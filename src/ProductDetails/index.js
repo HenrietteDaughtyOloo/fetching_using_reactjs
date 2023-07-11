@@ -19,7 +19,7 @@ const ProductDetails = () => {
     details();
   }, [productId]);
   if (!product) {
-    return <p>Loading...</p>;
+    return <p>Loading....</p>;
   }
   return (
     <div>

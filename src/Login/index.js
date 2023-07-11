@@ -16,7 +16,7 @@ const Login = ()=>{
 
 
 const handleSubmit = async(d) => {
-    d,preventDefault()
+    d.preventDefault()
 
     const data = {
         username : username,
@@ -61,7 +61,7 @@ catch(error){
             <br/>
             < Link to= {'/Products'}>
 
-            <button type="submit">Login</button>
+            <button type="submit">Log In</button>
             </Link>
           </form>
         </div>
