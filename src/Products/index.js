@@ -5,11 +5,13 @@ import "./style.css";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
-    getProducts();
-  }, []);
+    (async()=>{
+   await getProducts();
+  })();
+ }, []);
 
   const getProducts = async () => {
     try {
@@ -23,9 +25,9 @@ const Products = () => {
     }
   };
 
-  const handleNewProduct = (newProduct) => {
-    setProducts((prevProducts) => [...prevProducts, newProduct]);
-  };
+  // const handleNewProduct = (newProduct) => {
+  //   setProducts((prevProducts) => [...prevProducts, newProduct]);
+  // };
 
   if (loading) {
     return <h2>Loading...</h2>;

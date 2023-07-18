@@ -8,8 +8,8 @@ const AddProduct = ({ handleNewProduct }) => {
   const [discountPercentage, setDiscountPercentage] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (d) => {
+    d.preventDefault();
 
     const newProduct = {
       id: Date.now(),
@@ -39,7 +39,7 @@ const AddProduct = ({ handleNewProduct }) => {
               type="text"
               id="title"
               value={title}
-              onChange={(e) => setTitle(e.target.value)}
+              onChange={(d) => setTitle(d.target.value)}
             />
           </div>
 
@@ -49,7 +49,7 @@ const AddProduct = ({ handleNewProduct }) => {
               type="number"
               id="price"
               value={price}
-              onChange={(e) => setPrice(e.target.value)}
+              onChange={(d) => setPrice(d.target.value)}
             />
           </div>
 
@@ -59,7 +59,7 @@ const AddProduct = ({ handleNewProduct }) => {
               type="number"
               id="discount"
               value={discountPercentage}
-              onChange={(e) => setDiscountPercentage(e.target.value)}
+              onChange={(d) => setDiscountPercentage(d.target.value)}
             />
           </div>
 

@@ -3,6 +3,7 @@ import './App.css';
 import{Routes, Route, BrowserRouter,} from 'react-router-dom';
 import'./App.css';
 import Login from './Login';
+import Form from './AppendProduct'
 import Products from './Products';
 import ProductDetails from './ProductDetails';
 import AddProduct from './AddProduct';

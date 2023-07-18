@@ -16,7 +16,7 @@ const Login = ()=>{
 
 
 const handleSubmit = async(d) => {
-    d.preventDefault()
+    d.preventDefault();
 
     const data = {
         username : username,
@@ -50,12 +50,12 @@ catch(error){
           <form className="form" onSubmit={handleSubmit}> 
             <h1>Login</h1>
             <input placeholder="Enter username" type="text" required
-            onChange={(e) =>{setUsername(e.target.value)}}
+            onChange={(d) =>{setUsername(d.target.value)}}
             />
             <br/>
             <br/>
-            <input placeholder="Enter password" type="password" required
-            onChange={(e) =>{setPassword(e.target.value)}}
+            <input className="password" placeholder="Enter password" type="password" required
+            onChange={(d) =>{setPassword(d.target.value)}}
             />
             <br/>
             <br/>
@@ -66,7 +66,7 @@ catch(error){
           </form>
         </div>
     );
-}
+};
 
 
 export default Login;

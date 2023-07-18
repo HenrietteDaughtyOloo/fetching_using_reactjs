@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import'./style.css'
+
 const ProductDetails = () => {
   const { productId } = useParams();
   const  [product, setProduct] = useState(null);
@@ -21,6 +23,7 @@ const ProductDetails = () => {
   if (!product) {
     return <p>Loading....</p>;
   }
+
   return (
     <div>
       <h1 className='header'>Product Details</h1>
@@ -32,6 +35,8 @@ const ProductDetails = () => {
         <p> Price: {product.price}</p>
         <p> Ratings: {product.rating}</p>
         <p>Discount: {product.discountPercentage}</p>
+        {/* <Link to={`/form`} ><button  className="button-add">Add Product</button></Link>   */}
+
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color: blue;
+    color: rgb(154, 154, 212);
 }
 
 .product-container {
@@ -12,8 +12,8 @@ h1 {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 100px;
 }
 
 .product-item {
@@ -46,11 +46,11 @@ h1 {
 }
 
 .view-more-button:hover {
-    background-color: #26231a;
+    background-color: #3d6b3e;
 }
 
 .add-product-button {
-    background-color: #07ea0f;
+    background-color: #3d6b3e;
     color: white;
     padding: 10px 20px;
     border: none;
