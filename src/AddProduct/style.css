@@ -1,11 +1,11 @@
 .add-product-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .form-wrapper {
-    width: 400px;
+    width: 500px;
 }
 
 .form-group {
@@ -14,7 +14,7 @@
 
 label {
     display: block;
-    font-weight: bold;
+    font-weight: 10px;
     margin-bottom: 5px;
 }
 
