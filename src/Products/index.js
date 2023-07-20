@@ -21,7 +21,6 @@ const Products = () => {
       setProducts(result.products);
       setLoading(false);
     } catch (error) {
-      console.log(error.message);
     }
   };
 
@@ -47,7 +46,7 @@ const Products = () => {
               <h2>{item.title}</h2>
               <p>Price: {item.price}</p>
               <p>Discount: {item.discountPercentage}%</p>
-              <Link to={`/product-details/${item.id}`}>
+              <Link to={`/ProductDetails/${item.id}`}>
                 <button className="view-more-button">View More</button>
               </Link>
             </div>

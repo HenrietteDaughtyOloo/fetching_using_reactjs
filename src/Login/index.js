@@ -7,10 +7,8 @@ import './style.css'
 
 const Login = ()=>{
     const [username, setUsername]= useState('');
-    console.log({username});
 
     const [password, setPassword] = useState('');
-    console.log({password});
 
 
 
@@ -35,10 +33,8 @@ try{
 
     })
     const result = await response.json();
-    console.log({result});
 }
 catch(error){
-    console.log(error.message);
 }
 
 
@@ -61,7 +57,7 @@ catch(error){
             <br/>
             < Link to= {'/Products'}>
 
-            <button type="submit">Log In</button>
+            <button type="submit" className="submit">Log In</button>
             </Link>
           </form>
         </div>

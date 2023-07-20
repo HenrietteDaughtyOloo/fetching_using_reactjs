@@ -15,7 +15,8 @@ function App() {
       <nav className='navbar'>
         <Link className='links'to="/Login">Home</Link>
         <Link className='links' to="/Form">Details</Link>
-        <Link className='links' to="/AddProduct">Append</Link>
+
+        <Link className='links' to="/add-product">Append</Link>
       </nav>
   
         <Routes>

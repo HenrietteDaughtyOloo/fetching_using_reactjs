@@ -12,10 +12,8 @@ const ProductDetails = () => {
         const response = await fetch(`https://dummyjson.com/products/${productId}`);
         const info = await response.json();
         setProduct(info);
-        console.log({info});
       }
       catch (error) {
-        console.log(error.message);
       }
     };
     details();
